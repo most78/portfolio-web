@@ -1,10 +1,8 @@
 {
   "name": "portfolio-web",
   "version": "1.0.0",
-  "description": "Marcos Ostos portfolio web with Grunt",
+  "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,16 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/most78/portfolio-web.git"
   },
-  "keywords": [
-    "grunt",
-    "npm",
-    "jade",
-    "sass"
-  ],
-  "author": "Marcos Ostos",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/most78/portfolio-web/issues"
   },
-  "homepage": "https://github.com/most78/portfolio-web#readme"
+  "homepage": "https://github.com/most78/portfolio-web#readme",
+  "dependencies": {
+    "jquery": "^3.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  },
 }

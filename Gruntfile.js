@@ -27,6 +27,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      dist: {
+        options: {
+          sourceMapName: 'build/js/build.min.map',
+        },
+        files: [{
+          src: 'build/js/build.js',
+          dest: 'build/js/build.min.js'
+        }]
+      }
+    },
     cssmin: {
       options: {
         mergeIntoShorthands: false,
@@ -39,12 +50,12 @@ module.exports = function(grunt) {
       }
     },
     htmlmin: {
-      options: {                                
+      options: {
         removeComments: true,
         collapseWhitespace: true
       },
       dist: {
-        files: {                                    
+        files: {
           'build/*.html': 'build/*.html'
         }
       }
@@ -54,14 +65,14 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        sourceMap: true
+        style: 'expanded'
       },
       dist: {
         files: {
           'build/css/style.css': 'src/scss/*.scss'
         }
       }
-    }
+    },
     pug: {
       compile: {
         options: {
@@ -78,36 +89,31 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
-      watch: {
+      scripts: {
+        files: ['Gruntfile.js', 'src/js/*.js', 'src/scss/*.scss', 'src/pug/*.pug', 'src/js/*.js'],
+        tasks: ['eslint', 'less', 'pug', 'browserify', 'uglify', 'cssmin'],
         options: {
           livereload: true,
-        },
-        scripts: {
-          files: ['Gruntfile.js', 'src/js/*.js', 'src/less/*.less', 'src/pug/*.pug', 'src/js/*.js'],
-          tasks: ['eslint', 'less', 'pug', 'browserify', 'uglify', 'cssmin'],
-          options: {
-            livereload: true,
-          }
-        },
+        }
       },
-    });
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-pug');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-eslint');
-    grunt.loadNpmTasks('grunt-browserify');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    
-    // Start web server
-    grunt.registerTask('server', [
-        'connect:server',
-        'watch'
-    ]);
-    // Start web server
-    grunt.registerTask('build', ['eslint', 'sass', 'pug', 'browserify', 'uglify', 'cssmin', 'htmlmin']);
-  };
-  
+    },
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-pug');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-eslint');
+  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+  // Start web server
+  grunt.registerTask('server', ['connect:server','watch']);
+  // Start web server
+  grunt.registerTask('build', [
+    'eslint', 'sass', 'pug', 'browserify', 'uglify', 'cssmin', 'htmlmin']);
+};
+

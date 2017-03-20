@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/grunt build && ./node_modules/.bin/grunt server"
+    "start": "grunt build && ./node_modules/.bin/grunt server"
   },
   "repository": {
     "type": "git",
@@ -31,9 +31,9 @@
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-htmlmin": "^2.3.0",
     "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-eslint": "^19.0.0",
-    "grunt-sass": "^2.0.0"
+    "grunt-eslint": "^19.0.0"
   }
 }

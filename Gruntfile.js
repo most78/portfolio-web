@@ -87,7 +87,7 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: true,
+        livereload: 8000,
       },
       scripts: {
         files: ['Gruntfile.js', 'src/js/*.js', 'src/scss/*.scss', 'src/pug/*.pug', 'src/js/*.js'],

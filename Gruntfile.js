@@ -91,7 +91,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['Gruntfile.js', 'src/js/*.js', 'src/scss/*.scss', 'src/pug/*.pug', 'src/js/*.js'],
-        tasks: ['eslint', 'less', 'pug', 'browserify', 'uglify', 'cssmin'],
+        tasks: ['eslint', 'sass', 'pug', 'browserify', 'uglify', 'cssmin'],
         options: {
           livereload: true,
         }

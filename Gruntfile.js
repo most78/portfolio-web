@@ -56,7 +56,8 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'build/*.html': 'build/*.html'
+          src: ['src/html/*.html', '*.html'],
+          dest: 'build'
         }
       }
     },
@@ -80,14 +81,18 @@ module.exports = function(grunt) {
             debug: true
           }
         },
-        files: {
-          'build/index.html': ['src/pug/*.pug']
-        }
+        files: [{
+          cwd: 'src/pug',
+          src: '**/*.pug',
+          dest: 'build',
+          expand: true,
+          ext: '.html'
+        }]
       }
     },
     watch: {
       options: {
-        livereload: 8000,
+        livereload: true,
       },
       scripts: {
         files: ['Gruntfile.js', 'src/js/*.js', 'src/scss/*.scss', 'src/pug/*.pug', 'src/js/*.js'],
@@ -98,7 +103,6 @@ module.exports = function(grunt) {
       },
     },
   });
-
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-pug');
@@ -109,11 +113,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
-
   // Start web server
   grunt.registerTask('server', ['connect:server','watch']);
   // Start web server
   grunt.registerTask('build', [
     'eslint', 'sass', 'pug', 'browserify', 'uglify', 'cssmin', 'htmlmin']);
 };
-

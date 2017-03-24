@@ -1,0 +1,12 @@
+@import 'variables/_colors';
+html, body{
+  height: 100%;
+}
+body{
+  background: $main-background;
+  color: $main-text;
+}
+
+.main-title{
+  color:$main-links;
+}

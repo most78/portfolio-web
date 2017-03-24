@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+}
 
+body {
+  background: #343838;
+  color: #F2E9E1;
+}
+
+.main-title {
+  color: #00DFFC;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,18 @@
 //- layout.pug
+include mixins/layout.pug
 doctype html
 html
   block link
     -var selected = 'home'; //default
-    
+  
   -var menu = { 'home': '/home', 'blog': '/blog', 'contact': '/contact' };
     head
       block head
         title #{title}
         block scripts
-        script(src='//localhost:35729/livereload.js')
+          script(src='//localhost:35729/livereload.js')
+        block style
+            link(rel='stylesheet', href='/css/style.min.css')
     body
       block content
         block header
@@ -22,10 +25,9 @@ html
                       a.selected(href=val, title=key)= key
                     else
                       a(href=val, title=key)= key
-        block main
           main
             section
-              article
+              block article
         block foot
           footer
             p some footer content

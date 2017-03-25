@@ -1,5 +1,12 @@
 @mixin title {
   color:$title;
+  font-family: $title-font-family;
   font-size: $main-font-size * 2;
   text-transform: uppercase;  
+}
+@mixin content {
+  color: $main-text;
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  line-height: $main-font-size * 1.5;
 }

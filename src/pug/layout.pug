@@ -18,13 +18,11 @@ html
         block header
           header
             nav
-              ul
-                each val, key in menu
-                  li
-                    if selected === key
-                      a.selected(href=val, title=key)= key
-                    else
-                      a(href=val, title=key)= key
+              each val, key in menu
+                  if selected === key
+                    a.selected(href=val, title=key)= key
+                  else
+                    a(href=val, title=key)= key
           main
             section
               block article

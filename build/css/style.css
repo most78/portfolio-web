@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono");
 html, body {
   height: 100%;
 }
@@ -5,6 +6,10 @@ html, body {
 body {
   background: #343838;
   color: #F2E9E1;
+  font-family: "Space Mono", monospace;
+  font-size: 100%;
+  line-height: 150%;
+  margin: 0;
 }
 
 a {
@@ -12,12 +17,28 @@ a {
   text-decoration: none;
 }
 
+main, nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+p {
+  margin: 0;
+}
+
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .main-title {
   color: #00DFFC;
+  font-family: "BioRhyme", serif;
   font-size: 200%;
   text-transform: uppercase;
 }

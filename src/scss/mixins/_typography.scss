@@ -1,0 +1,5 @@
+@mixin title {
+  color:$title;
+  font-size: $main-font-size * 2;
+  text-transform: uppercase;  
+}

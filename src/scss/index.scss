@@ -1,12 +1,19 @@
+// Import mixins
+@import 'mixins/_layout';
+@import 'mixins/_typography';
+
+//Import variables
 @import 'variables/_colors';
-html, body{
-  height: 100%;
-}
-body{
-  background: $main-background;
-  color: $main-text;
+@import 'variables/_typography';
+
+// Reset
+@import '_reset';
+
+// Index style
+.main-title{
+  @include title;
 }
 
-.main-title{
-  color:$main-links;
-}
+
+
+

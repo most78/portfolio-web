@@ -1,0 +1,14 @@
+html, body{
+  @include full-height;
+}
+body{
+  background: $main-background;
+  color: $main-text;
+}
+a{
+  color: $link;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}

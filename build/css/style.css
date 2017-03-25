@@ -7,8 +7,19 @@ body {
   color: #F2E9E1;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .main-title {
   color: #00DFFC;
+  font-size: 200%;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,8 @@ body {
   background: #343838;
   color: #F2E9E1;
   font-family: "Space Mono", monospace;
-  font-size: 100%;
-  line-height: 150%;
+  font-size: 1em;
+  line-height: 1.5em;
   margin: 0;
 }
 
@@ -26,8 +26,9 @@ main, nav {
   justify-content: space-around;
 }
 
-p {
+h1, p {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -43,12 +44,12 @@ ul {
 .main-title {
   color: #00DFFC;
   font-family: "BioRhyme", serif;
-  font-size: 200%;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
 .wrapper {
-  width: 60em;
+  width: 85.375%;
 }
 
 /*# sourceMappingURL=style.css.map */

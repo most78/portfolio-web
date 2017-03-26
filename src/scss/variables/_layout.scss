@@ -1,1 +1,2 @@
-$wrapper-size: 60em;
+$wrapper-size-value: 1366;
+$wrapper-size: ($wrapper-size-value/$font-size-value)*1%;

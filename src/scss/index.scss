@@ -7,9 +7,29 @@
 // Reset
 @import '_reset';
 
-// Index style
-.main-nav{
-  padding: 1em 0;
+//**************** Index style **************
+
+// Tags
+nav {
+  a{
+  flex: 1;
+  line-height: 42px;
+  @include left-right-margin(1em);
+  text-align: center;
+  &:first-child{
+      margin-left: 0;
+    }
+  &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+// Classes
+.main-header{
+  height: 10%;
+  @include align-center;
+  @include flex;
+  @include justify-center;
 }
 .main-title{
   @include title;

@@ -37,8 +37,31 @@ ul {
   list-style: none;
 }
 
-.main-nav {
-  padding: 1em 0;
+nav a {
+  flex: 1;
+  line-height: 42px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+nav a:first-child {
+  margin-left: 0;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+.main-header {
+  height: 10%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .main-title {
@@ -49,7 +72,7 @@ ul {
 }
 
 .wrapper {
-  width: 85.375%;
+  width: 48em;
 }
 
 /*# sourceMappingURL=style.css.map */

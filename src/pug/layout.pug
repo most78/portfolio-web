@@ -17,14 +17,14 @@ html
       block content
         block header
           header
-            nav
+            nav.main-nav
               each val, key in menu
                   if selected === key
                     a.selected(href=val, title=key)= key
                   else
                     a(href=val, title=key)= key
           main
-            section
+            section.wrapper
               block article
         block foot
           footer

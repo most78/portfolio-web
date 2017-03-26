@@ -2,17 +2,22 @@
 @import 'mixins/_layout';
 @import 'mixins/_typography';
 
-//Import variables
-@import 'variables/_colors';
-@import 'variables/_typography';
+@import 'variables/_main';
 
 // Reset
 @import '_reset';
 
 // Index style
+.main-nav{
+  padding: 1em 0;
+}
 .main-title{
   @include title;
 }
+.wrapper{
+  @include wrapper;
+}
+
 
 
 

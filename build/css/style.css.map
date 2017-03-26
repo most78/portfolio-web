@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACQ,0EAAkE;AAG1E,UAAU;ECER,MAAM,EAAE,IAAI;;;ADCd,IAAI;EACF,UAAU,EERM,OAAO;ECOvB,KAAK,EDNK,OAAO;ECOjB,WAAW,ECPM,uBAAuB;EDQxC,SAAS,ECPK,IAAI;EDQlB,WAAW,EAAE,IAAqB;EFDlC,MAAM,EAAE,CAAC;;;ADGX,CAAC;EACC,KAAK,EEVA,IAAI;EFWT,eAAe,EAAE,IAAI;;;AAEvB,SAAS;ECfP,OAAO,EAAC,YAAY;EACpB,OAAO,EAAC,WAAW;EACnB,OAAO,EAAC,IAAI;EAYZ,uBAAuB,EAAC,YAAY;EACpC,aAAa,EAAC,UAAU;EACxB,eAAe,EAAC,YAAY;;;ADG9B,CAAC;ECXC,MAAM,EAAE,CAAC;;;ADcX,EAAE;ECdA,MAAM,EAAE,CAAC;EAGT,OAAO,EAAE,CAAC;EDcV,UAAU,EAAE,IAAI;;;AKdlB,WAAW;EFXT,KAAK,EDCC,OAAO;ECAb,WAAW,ECFM,iBAAiB;EDGlC,SAAS,EAAE,IAAmB;EAC9B,cAAc,EAAE,SAAS",
-"sources": ["../../src/scss/_reset.scss","../../src/scss/mixins/_layout.scss","../../src/scss/variables/_colors.scss","../../src/scss/mixins/_typography.scss","../../src/scss/variables/_typography.scss","../../src/scss/index.scss"],
+"mappings": "AACQ,0EAAkE;AAG1E,UAAU;ECER,MAAM,EAAE,IAAI;;;ADCd,IAAI;EACF,UAAU,EERM,OAAO;ECOvB,KAAK,EDNK,OAAO;ECOjB,WAAW,ECPM,uBAAuB;EDQxC,SAAS,ECPK,IAAI;EDQlB,WAAW,EAAE,IAAqB;EFIlC,MAAM,EAAE,CAAC;;;ADFX,CAAC;EACC,KAAK,EEVA,IAAI;EFWT,eAAe,EAAE,IAAI;;;AAEvB,SAAS;ECfP,OAAO,EAAC,YAAY;EACpB,OAAO,EAAC,WAAW;EACnB,OAAO,EAAC,IAAI;EAMZ,uBAAuB,EAAC,YAAY;EACpC,aAAa,EAAC,UAAU;EACxB,eAAe,EAAC,YAAY;;;ADS9B,CAAC;ECNC,MAAM,EAAE,CAAC;;;ADSX,EAAE;ECTA,MAAM,EAAE,CAAC;EAGT,OAAO,EAAE,CAAC;EDSV,UAAU,EAAE,IAAI;;;AKhBlB,SAAS;EACP,OAAO,EAAE,KAAK;;;AAEhB,WAAW;EFZT,KAAK,EDCC,OAAO;ECAb,WAAW,ECFM,iBAAiB;EDGlC,SAAS,EAAE,IAAmB;EAC9B,cAAc,EAAE,SAAS;;;AEY3B,QAAQ;EJIN,KAAK,EKpBQ,IAAI",
+"sources": ["../../src/scss/_reset.scss","../../src/scss/mixins/_layout.scss","../../src/scss/variables/_colors.scss","../../src/scss/mixins/_typography.scss","../../src/scss/variables/_typography.scss","../../src/scss/index.scss","../../src/scss/variables/_layout.scss"],
 "names": [],
 "file": "style.css"
 }

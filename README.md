@@ -1,4 +1,4 @@
 # portfolio-web
 
 //Star Grunt with reload Server
-npm start
+npm start# informeTestAB

@@ -1,0 +1,29 @@
+//Font import
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono');
+
+//Reset
+html, body{
+  @include full-height;
+}
+body{
+  background: $main-background;
+  @include content;
+  @include no-margin;
+}
+a{
+  color: $link;
+  text-decoration: none;
+}
+main, nav{
+  @include flex;
+  @include justify-space-around;
+}
+h1,p{
+  @include no-margin;
+  @include no-padding;
+}
+ul{
+  @include no-margin;
+  @include no-padding;
+  list-style: none;
+}

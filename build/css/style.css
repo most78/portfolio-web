@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme|Space+Mono");
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #343838;
+  color: #F2E9E1;
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main, nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  flex: 1;
+  line-height: 42px;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+nav a:first-child {
+  margin-left: 0;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+.main-header {
+  height: 10%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main-title {
+  color: #00DFFC;
+  font-family: "BioRhyme", serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  width: 48em;
+}
+
+/*# sourceMappingURL=style.css.map */
